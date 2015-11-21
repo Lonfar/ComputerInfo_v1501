@@ -13,7 +13,7 @@ namespace ComputerInfo
         public string GetCPUInfo()
         {
             string info = "";
-
+            //测试
             ManagementObjectSearcher objOSDetails = new ManagementObjectSearcher("SELECT * FROM Win32_Processor");
             ManagementObjectCollection osDetailsCollection = objOSDetails.Get();
             foreach (ManagementObject MangementObj in osDetailsCollection)
